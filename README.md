@@ -49,7 +49,7 @@ tanssi-relay key generate-node-key --file $HOME/tanssi-data/node-key
 ```
 NOT: molla202 yazan yerleri kendi adınızla değiştirin
 ```
-sudo tee /etc/systemd/system/tanssid.service > /dev/null <<'EOF'
+sudo tee /etc/systemd/system/tanssid.service > /dev/null <<EOF
 [Unit]
 Description="Tanssi systemd service"
 After=network.target
