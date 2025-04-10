@@ -63,9 +63,9 @@ User=root
 SyslogIdentifier=tanssi
 SyslogFacility=local7
 KillSignal=SIGHUP
-ExecStart=$HOME/tanssi-data/tanssi-relay --chain=dancelight \
-  --base-path=$HOME/tanssi-data/ \
-  --node-key-file $HOME/tanssi-data/node-key \
+ExecStart=root/tanssi-data/tanssi-relay --chain=dancelight \
+  --base-path=root/tanssi-data/ \
+  --node-key-file root/tanssi-data/node-key \
   --database=paritydb \
   --rpc-port=9944 \
   --prometheus-port=9615 \
